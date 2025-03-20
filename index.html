@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tareas</title>
-    
     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Lista de Tareas 📝</h2>
+        
+        <input type="text" id="nuevaTarea" placeholder="Escribe una tarea">
+        
+        <!-- Selección de Categoría -->
+        <select id="categoria">
+            <option value="personal">Personal</option>
+            <option value="trabajo">Trabajo</option>
+        </select>
+
+        <!-- Selección de Fecha y Hora -->
+        <input type="datetime-local" id="recordatorio">
+
+        <button onclick="agregarTarea()">Agregar</button>
+        
         <ul id="listaTareas"></ul>
     </div>
 
